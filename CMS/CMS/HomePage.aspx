@@ -52,8 +52,14 @@
                 <li class="nav-item">
                     <a class="nav-link active" href="#">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Admission Cell</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="#">Admission Cell</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">B.TECH</a>
+                        <a class="dropdown-item" href="#">BBA</a>
+                        <a class="dropdown-item" href="#">BCA</a>
+                        <a class="dropdown-item" href="#">M.TECH</a>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Gallery</a>
