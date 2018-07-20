@@ -67,10 +67,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="HomePage.aspx" />
-    <Content Include="imgaes\32440684_923437154503553_1605752460813533184_o.jpg" />
+    <Content Include="imgaes\3.jpg" />
+    <Content Include="imgaes\piu.jpg" />
+    <Content Include="imgaes\1.jpg" />
+    <Content Include="imgaes\4.jpg" />
+    <Content Include="imgaes\IMG_20180227_144504.jpg" />
+    <Content Include="imgaes\IMG_20180227_144511.jpg" />
     <Content Include="imgaes\logo.jpg" />
     <Content Include="packages.config" />
     <Content Include="Main.Master" />
+    <Content Include="Home.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -101,6 +107,13 @@
     </Compile>
     <Compile Include="Main.Master.designer.cs">
       <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
