@@ -32,6 +32,12 @@
     height: 600px;
 }
 
+@media screen and (max-height : 768px) {
+    .carousel-item img {
+        height: 400px;
+    }
+}
+
 @media screen and (max-width : 1024px) {
     .carousel-item img {
         width: 100%;
@@ -39,25 +45,48 @@
     }
 }
 
-.list-item{
-    -webkit-box-shadow:0px 1px 1px grey;
-    -moz-box-shadow:0px 1px 1px grey;
-     box-shadow:5px 5px 5px grey;
-     margin : 10px 10px 10px 0px;
-     padding :20px;
+.list-item {
+    -webkit-box-shadow: 0px 1px 1px grey;
+    -moz-box-shadow: 0px 1px 1px grey;
+    box-shadow: 5px 5px 5px grey;
+    margin: 10px 10px 10px 0px;
+    padding: 20px;
 }
 
-.news-item{
-    font-family : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size : 23px;
-    font-weight : bold;
-    font-style :oblique;
-    color : darkcyan;
+.news-item {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+    font-style: oblique;
+    color: darkcyan;
 }
 
-.list-item a:hover{
-    font-weight :bolder;
-    color : chocolate;
-    font-size : 25px;
-    font-style :normal;
+.list-item a:hover {
+    font-weight: bolder;
+    color: chocolate;
+    font-size: 25px;
+    font-style: normal;
+}
+
+@media screen and (max-width : 600px) {
+    .news-item {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        font-style: oblique;
+        color: darkcyan;
+    }
+
+    .list-item a:hover {
+        font-weight: bolder;
+        color: chocolate;
+        font-size: 20px;
+        font-style: normal;
+    }
+
+    .list-item {
+        box-shadow: 2px 2px 2px grey;
+    margin: 5px 5px 5px 0px;
+    padding: 10px;
+    }
 }
