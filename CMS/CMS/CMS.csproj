@@ -74,6 +74,8 @@
     <Content Include="imgaes\IMG_20180227_144504.jpg" />
     <Content Include="imgaes\IMG_20180227_144511.jpg" />
     <Content Include="imgaes\logo.jpg" />
+    <Content Include="imgaes\post.png" />
+    <Content Include="Models\Style.css" />
     <Content Include="packages.config" />
     <Content Include="Main.Master" />
     <Content Include="Home.aspx" />
@@ -118,7 +120,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
