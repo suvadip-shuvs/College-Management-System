@@ -43,7 +43,7 @@
                     Asansol, Paschim Bardhaman
                 </p>
             </div>
-            <div class="col-sm-3" style="text-align: center">
+            <div class="col-sm-3" id="social-icons" style="text-align: center">
                 <br />
                 <h3 style="font-family: 'Times New Roman', Times, serif; font-weight: lighter">Connect Us :</h3>
                 <a href="#" class="fa fa-facebook"></a>
@@ -55,6 +55,7 @@
 
 
     <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top" style="font-weight: bold; font-size: larger; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
+        <a class="navbar-brand"><i class="fa fa-home fa-2x" style="color :white"></i></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>

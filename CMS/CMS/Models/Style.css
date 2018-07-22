@@ -1,4 +1,4 @@
-﻿.fa {
+﻿#social-icons .fa {
     padding: 20px;
     font-size: 30px;
     width: 70px;
@@ -8,9 +8,9 @@
     border-radius: 50%;
 }
 
-    .fa:hover {
-        opacity: 0.7;
-    }
+.fa:hover {
+    opacity: 0.7;
+}
 
 .fa-facebook {
     background: #3B5998;
@@ -86,7 +86,7 @@
 
     .list-item {
         box-shadow: 2px 2px 2px grey;
-    margin: 5px 5px 5px 0px;
-    padding: 10px;
+        margin: 5px 5px 5px 0px;
+        padding: 10px;
     }
 }

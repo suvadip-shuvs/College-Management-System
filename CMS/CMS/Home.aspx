@@ -25,7 +25,7 @@
                  </ul>
             </div>
 
-            <div class="col-sm-6" style="height : 300px">
+            <div class="col-sm-6">
                 <div id="demo" class="carousel slide" data-ride="carousel">
 
                     <!-- Indicators -->
@@ -72,14 +72,14 @@
 
             </div>
 
-            <div class="col-sm-3" style="margin-top :10px">
-                <ul class="list-unstyled" style="justify-content :center">
+            <div class="col-sm-3">
+                <ul class="list-unstyled">
                     <li class="">
-                        <a href="#" class="btn btn-info btn-lg" role="button">Student Login</a>
+                        <a class="btn btn-info btn-lg" href="#">Student Login</a>
                     </li>
 
                     <li class=>
-                        <a class="btn btn-success btn-lg">Faculty Login</a>
+                        <a class="btn btn-primary btn-lg"><i class="fa fa-sign-in"></i> Login</a>
                     </li>
                 </ul>
             </div>
