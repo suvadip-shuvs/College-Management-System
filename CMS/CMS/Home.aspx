@@ -74,12 +74,12 @@
 
             <div class="col-sm-3" style="margin-top :10px">
                 <ul class="list-unstyled" style="justify-content :center">
-                    <li>
+                    <li class="">
                         <a href="#" class="btn btn-info btn-lg" role="button">Student Login</a>
                     </li>
 
-                    <li>
-                        <a class="btn-success">Faculty Login</a>
+                    <li class=>
+                        <a class="btn btn-success btn-lg">Faculty Login</a>
                     </li>
                 </ul>
             </div>
