@@ -2,27 +2,27 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container-fluid">
-        <div class="row" style="margin-top : 20px">
-            <div class="col-sm-3" style="margin-top : 10px;background-image : url(imgaes/post.png);background-size : contain">
+        <div class="row" style="margin-top: 20px">
+            <div class="col-sm-3" style="margin-top: 10px; background-image: url(imgaes/post.png); background-size: contain">
                 <h2>Latest Posts</h2>
                 <br />
-                 <ul class="list-unstyled">
-                     <li class="list-item">
-                         <a class="news-item" href="#">Recruiters of AEC</a>
-                     </li>
+                <ul class="list-unstyled">
+                    <li class="list-item">
+                        <a class="news-item" href="#">Recruiters of AEC</a>
+                    </li>
 
-                     <li class="list-item">
-                         <a class="news-item" href="#">Electronics Innovation</a>
-                     </li>
+                    <li class="list-item">
+                        <a class="news-item" href="#">Electronics Innovation</a>
+                    </li>
 
-                     <li class="list-item">
-                         <a class="news-item" href="#">Entreprenuership Cell</a>
-                     </li>
+                    <li class="list-item">
+                        <a class="news-item" href="#">Entreprenuership Cell</a>
+                    </li>
 
-                     <li class="list-item">
-                         <a class="news-item" href="#">Tech Club</a>
-                     </li>
-                 </ul>
+                    <li class="list-item">
+                        <a class="news-item" href="#">Tech Club</a>
+                    </li>
+                </ul>
             </div>
 
             <div class="col-sm-6">
@@ -73,15 +73,54 @@
             </div>
 
             <div class="col-sm-3">
-                <ul class="list-unstyled">
-                    <li class="">
-                        <a class="btn btn-info btn-lg" href="#">Student Login</a>
+                <ul class="list-unstyled" style="text-align: center">
+                    <li class="gap">
+                        <a class="btn btn-info btn-lg" href="#" data-toggle="modal" data-target="#myModal" data-backdrop="static"><i class="fa fa-address-book">&nbsp;</i>Student Portal</a>
                     </li>
 
-                    <li class=>
-                        <a class="btn btn-primary btn-lg"><i class="fa fa-sign-in"></i> Login</a>
+                    <li class="gap">
+                        <a class="btn btn-success btn-lg"><i class="fa fa-sign-in"></i>&nbsp;Faculty Portal</a>
                     </li>
                 </ul>
+
+                <!-- The Modal -->
+                <div class="modal fade" id="myModal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header"style="padding:35px 50px">
+                                <h3 id="head" class="modal-title"><i class="fa fa-user-circle fa-lg"></i> Login</h3>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <form runat="server">
+                                    <div class="form-group">
+                                        <label><i class="fa fa-user"></i>&nbsp;Username :</label>
+                                        <asp:TextBox ID="TextBox1" CssClass="form-control" runat="server" placeholder="Enter your userid"></asp:TextBox>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label><i class="fa fa-lock"></i>&nbsp;Password :</label>
+                                        <asp:TextBox ID="TextBox2" CssClass="form-control" runat="server" placeholder="Enter your password" TextMode="Password"></asp:TextBox>
+                                    </div>
+
+                                    <asp:Button ID="Button1" runat="server" CssClass="btn btn-primary" Text="Submit" />
+                                    <a href="#" style="float:right">Forgot Password ?</a>
+                                </form>
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger pull-left" data-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

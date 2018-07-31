@@ -90,3 +90,42 @@
         padding: 10px;
     }
 }
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.gap {
+    margin: 20px 0px;
+}
+
+.foot {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    height:;
+}
+
+@media only screen and (max-width :600px) {
+    .foot {
+        position: sticky;
+    }
+}
+
+
+
+
+.modal-header,#head , .close {
+      background-color: dodgerblue;
+      color:white !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  
+.modal-footer {
+      background-color: #f9f9f9;
+  }
