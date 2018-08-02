@@ -73,7 +73,7 @@
             </div>
 
             <div class="col-sm-3">
-                <ul class="list-unstyled" style="text-align: center">
+                <%--<ul class="list-unstyled" style="text-align: center">
                     <li class="gap">
                         <a class="btn btn-info btn-lg" href="#" data-toggle="modal" data-target="#myModal" data-backdrop="static"><i class="fa fa-address-book">&nbsp;</i>Student Portal</a>
                     </li>
@@ -99,15 +99,16 @@
                                 <form runat="server">
                                     <div class="form-group">
                                         <label><i class="fa fa-user"></i>&nbsp;Username :</label>
-                                        <asp:TextBox ID="TextBox1" CssClass="form-control" runat="server" placeholder="Enter your userid"></asp:TextBox>
+                                        <asp:TextBox ID="userid" CssClass="form-control" runat="server"></asp:TextBox>
                                     </div>
 
                                     <div class="form-group">
                                         <label><i class="fa fa-lock"></i>&nbsp;Password :</label>
-                                        <asp:TextBox ID="TextBox2" CssClass="form-control" runat="server" placeholder="Enter your password" TextMode="Password"></asp:TextBox>
+                                        <asp:TextBox ID="Password" TextMode="Password" runat="server" CssClass="form-control"></asp:TextBox>
                                     </div>
 
-                                    <asp:Button ID="Button1" runat="server" CssClass="btn btn-primary" Text="Submit" />
+                                    <asp:Label ID="Label1" runat="server" Text="Incorrect User Credentials"></asp:Label>
+                                    <asp:Button ID="Button1" runat="server" CssClass="btn btn-primary" Text="Submit" OnClick="Button1_Click" />
                                     <a href="#" style="float:right">Forgot Password ?</a>
                                 </form>
                             </div>
@@ -119,7 +120,21 @@
 
                         </div>
                     </div>
-                </div>
+                </div>--%> 
+                <form runat="server">
+                    <div class="form-group">
+                        <label>Username :</label>
+                        <<asp:TextBox ID="userid" CssClass="form-control" runat="server"></asp:TextBox>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Password :</label>
+                        <asp:TextBox ID="pass" CssClass="form-control" runat="server" TextMode="Password"></asp:TextBox>
+                    </div>
+
+                    <asp:Button ID="submit" CssClass="btn btn-success" runat="server" Text="Submit" />
+                </form>
+
 
             </div>
         </div>

@@ -13,8 +13,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-
-
 </head>
 <body>
     <%--<div class="container-fluid">
@@ -94,7 +92,8 @@
     </asp:ContentPlaceHolder>
 
     <div class="foot">
-        <h4>Asansol Engineering College &copy; 2018</h4>
+        <h4 style="float:left">Asansol Engineering College &copy; 2018</h4>
+        <h6 style="float:right">Designed By : Suvadip Dutta</h6>
     </div>
 
     <script type="text/javascript">
@@ -117,7 +116,8 @@
                 $('[data-toggle="dropdown"]', _d).attr('aria-expanded', _d.is(':hover'));
             }, 300);
         });
-    </script>
 
+        
+     </script>
 </body>
 </html>

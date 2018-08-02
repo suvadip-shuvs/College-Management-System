@@ -106,8 +106,7 @@
     width: 100%;
     background-color: black;
     color: white;
-    text-align: center;
-    height:;
+    text-align:;
 }
 
 @media only screen and (max-width :600px) {
@@ -125,7 +124,7 @@
       text-align: center;
       font-size: 30px;
   }
-  
+    
 .modal-footer {
       background-color: #f9f9f9;
   }
