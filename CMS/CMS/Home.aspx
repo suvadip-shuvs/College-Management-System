@@ -121,18 +121,22 @@
                         </div>
                     </div>
                 </div>--%> 
+                <p style="padding : 0px 10px;background-color: green;"><h3 style="text-align :center;background-color:greenyellow;font-size: 2.5em;padding : 50px 0px">Student Login</h3></p>
                 <form runat="server">
                     <div class="form-group">
-                        <label>Username :</label>
-                        <<asp:TextBox ID="userid" CssClass="form-control" runat="server"></asp:TextBox>
+                        <label><i class="fas fa-user"></i> Username : </label>
+                        <asp:TextBox ID="userid" CssClass="form-control" required runat="server"></asp:TextBox>
                     </div>
 
                     <div class="form-group">
-                        <label>Password :</label>
-                        <asp:TextBox ID="pass" CssClass="form-control" runat="server" TextMode="Password"></asp:TextBox>
+                        <label><i class="fas fa-lock"></i> Password :</label>
+                        <asp:TextBox ID="pass" CssClass="form-control" required runat="server" TextMode="Password"></asp:TextBox>
                     </div>
 
-                    <asp:Button ID="submit" CssClass="btn btn-success" runat="server" Text="Submit" />
+                    <asp:Label ID="error" runat="server" Text="" ForeColor="Red" BackColor="#FFFFCC" Font-Bold="True" Font-Underline="True" Font-Size="Large" Width="100%" Visible="True">Incorrect Details...Please try again!!<i class="far fa-sad-tear"></i> </asp:Label><br /><br />
+
+                    <asp:Button ID="submit" CssClass="btn btn-success" runat="server" Text="Submit" OnClick="submit_Click" />
+                    <a href="#" style="float: right">Forgot Password ?</a>
                 </form>
 
 

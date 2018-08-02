@@ -14,7 +14,30 @@ namespace CMS
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //Label1.Visible = false;
+            error.Visible = false;
+        }
+
+        protected void submit_Click(object sender, EventArgs e)
+        {
+            string cs = ConfigurationManager.ConnectionStrings["userdata"].ConnectionString;
+            using (SqlConnection con = new SqlConnection(cs))
+            {
+                con.Open();
+                string query = "select count(1) from userdata where userid=@user and password=@pass";
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("user", userid.Text.Trim());
+                cmd.Parameters.AddWithValue("pass", pass.Text);
+                int count = Convert.ToInt32(cmd.ExecuteScalar());
+
+                if(count==1)
+                {
+                    Response.Redirect("Webform2.aspx");
+                }
+                else
+                {
+                    error.Visible = true;
+                }
+            }
         }
 
         //protected void Button1_Click(object sender, EventArgs e)
