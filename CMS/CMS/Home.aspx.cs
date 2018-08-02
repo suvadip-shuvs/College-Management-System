@@ -19,7 +19,7 @@ namespace CMS
 
         protected void submit_Click(object sender, EventArgs e)
         {
-            string cs = ConfigurationManager.ConnectionStrings["userdata"].ConnectionString;
+            string cs = ConfigurationManager.ConnectionStrings["piu"].ConnectionString;
             using (SqlConnection con = new SqlConnection(cs))
             {
                 con.Open();
